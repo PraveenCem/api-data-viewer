@@ -1,0 +1,108 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f5f7fa;
+  color: #222;
+}
+
+#root {
+  width: 100%;
+}
+
+.app {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+h1 {
+  margin: 0 0 30px;
+  color: #222;
+}
+
+/* Status messages */
+
+.status {
+  padding: 12px 15px;
+  margin-bottom: 20px;
+  border-radius: 6px;
+}
+
+.loading {
+  background: #e9ecef;
+  color: #333;
+}
+
+.error {
+  background: #ffe5e5;
+  color: #b00020;
+}
+
+/* Table */
+
+.table-container {
+  overflow-x: auto;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th {
+  background: #eeeeee;
+  color: #222;
+  padding: 14px;
+  text-align: left;
+}
+
+td {
+  padding: 14px;
+  color: #333;
+  border-bottom: 1px solid #ddd;
+}
+
+tbody tr:hover {
+  background: #f8f9fa;
+}
+
+/* Page information */
+
+.page-info {
+  margin-top: 20px;
+  color: #555;
+}
+
+/* Pagination */
+
+.pagination {
+  display: flex;
+  gap: 6px;
+  margin-top: 15px;
+  flex-wrap: wrap;
+}
+
+.pagination button {
+  padding: 8px 13px;
+  border: 1px solid #ccc;
+  background: white;
+  color: #222;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.pagination button:hover:not(:disabled) {
+  background: #eeeeee;
+}
+
+.pagination button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
